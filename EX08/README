@@ -1,1 +1,71 @@
+📦 Inventory Management System (Java)
+
+This project demonstrates an Inventory Management System implemented in Java using three important design patterns:
+
+Singleton Pattern
+Adapter Pattern
+Iterator Pattern
+🚀 Features
+Maintain a centralized inventory using Singleton
+Support both new products and legacy products
+Integrate old system (LegacyItem) using Adapter
+Traverse inventory using Iterator
+🧠 Design Patterns Used
+1. Singleton Pattern
+Ensures only one instance of InventoryManager exists
+Provides a global access point to inventory
+2. Adapter Pattern
+Converts LegacyItem into Product
+Allows reuse of existing legacy code without modification
+3. Iterator Pattern
+Provides a standard way to traverse product collection
+Uses Iterator interface (hasNext(), next())
+🏗️ Project Structure
+Inventory-Management-System/
+│
+├── Product.java
+├── LegacyItem.java
+├── ProductAdapter.java
+├── NewProduct.java
+├── InventoryManager.java
+└── Main.java
+💻 Technologies Used
+Java
+Core Java Collections (ArrayList, Iterator)
+▶️ How to Run
+1. Compile all files
+javac *.java
+2. Run the program
+java Main
+📌 Example Output
+New Product -> Name: Laptop
+New Product -> Name: Mobile
+Legacy Item -> ID: 101, Description: Old Keyboard
+Legacy Item -> ID: 102, Description: Old Monitor
+📖 Class Description
+🔹 Product (Interface)
+Defines displayDetails() method
+🔹 LegacyItem
+Represents old system product
+Uses print() method
+🔹 ProductAdapter
+Adapts LegacyItem to Product
+🔹 NewProduct
+Represents modern product structure
+🔹 InventoryManager
+Singleton class
+Stores products in ArrayList
+Provides iterator
+🔹 Main
+Entry point of the program
+Demonstrates functionality
+🎯 Learning Outcomes
+Understanding of design patterns in real applications
+Integration of legacy systems
+Clean and modular object-oriented design
+📌 Future Enhancements
+Add GUI (JavaFX / Swing)
+Add database integration (MySQL)
+Implement search and delete operations
+Add product categories and pricing
 
