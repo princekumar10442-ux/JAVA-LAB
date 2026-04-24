@@ -1,1 +1,24 @@
+# Vehicle Management System (Java Program)
 
+A simple Java OOP-based program that demonstrates the creation of a **Vehicle class** with constructors, getters/setters, and basic operational methods.
+The application creates multiple vehicle objects, stores them in an array, and displays vehicle details in **tabular format** with basic validation cases.
+
+## Features
+
+* Default, parameterized, and copy constructors
+* Encapsulation using private data members with getters/setters
+* Methods: start(), stop(), drive(), calcMileage(), changeSpeed()
+* Multiple vehicle object creation and array handling
+* Tabular display of Brand, Model, Price, Mileage, Mfg Code, and Efficiency
+* Basic error handling for invalid price, zero fuel, and missing details
+
+## Technologies Used
+
+* Java (JDK 8 or above)
+* VS Code / Any Java IDE
+* Object-Oriented Programming (OOP) concepts
+* Command-line execution
+
+## Author
+
+Student – Artificial Intelligence & Machine Learning
