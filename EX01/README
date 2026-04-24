@@ -1,1 +1,30 @@
+Calculator (JAVA PROGRAM)
+A simple menu-driven calculator application written in Java that performs basic arithmetic operations using Object-Oriented Programming (OOP) concepts.
 
+# Features
+
+Addition, subtraction, multiplication
+
+Division with zero-division handling
+
+Modulus operation
+
+User input using Scanner class
+
+Continuous execution until user exits
+
+Clean class-based structure (Calculator + Main)
+
+# Technologies Used
+
+Java (JDK 8 or above)
+
+VS Code / Any Java IDE
+
+OOP Concepts
+
+Command-line execution
+# Author
+
+
+Student – Artificial Intelligence & Machine Learning
