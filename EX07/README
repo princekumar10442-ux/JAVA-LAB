@@ -1,1 +1,143 @@
+#  Student Management System using Java (CSV File Handling)
 
+##  Overview
+
+This project demonstrates a **Student Management System** using Java with **CSV file handling**.
+It performs all **CRUD operations (Create, Read, Update, Delete)** on a `Students.csv` file and displays the output in a **formatted table**.
+
+---
+
+##  Objectives
+
+* Work with **file handling in Java**
+* Perform **CRUD operations**
+* Implement **OOP concepts**
+* Handle **exceptions (IOException)**
+* Display output in **table format**
+
+---
+
+##  Project Structure
+
+```
+📁 Project Folder
+ ├── Students.csv
+ ├── StudentOperations.java
+ ├── MainApp.java
+```
+
+---
+
+##  CSV File Format
+
+```
+studentId,name,branch,marks1,marks2,marks3,marks4,marks5,percentage
+```
+
+---
+
+##  Features
+
+###  Create (Add Students)
+
+* Adds 3 new students
+* Initially sets `marks4` and `marks5` to 0
+
+###  Read (Display Data)
+
+* Reads data from CSV file
+* Displays output in **table format**
+
+###  Update
+
+* Updates `marks4` and `marks5`
+* Calculates percentage automatically
+
+###  Delete
+
+* Deletes student record using `studentId`
+
+###  Exception Handling
+
+* Handles file errors using `IOException`
+* Demonstrates `FileNotFoundException`
+
+---
+
+##  Concepts Used
+
+* Java File Handling (`FileWriter`, `FileReader`, `BufferedReader`)
+* Object-Oriented Programming (Class & Object)
+* Arrays & ArrayList
+* Exception Handling (`try-catch`)
+* Data Formatting (`printf`)
+
+---
+
+##  Percentage Formula
+
+Average percentage is calculated as:
+
+```
+percentage = (marks1 + marks2 + marks3 + marks4 + marks5) / 5
+```
+
+---
+
+##  How to Run
+
+1. Compile the program:
+
+```
+javac StudentOperations.java MainApp.java
+```
+
+2. Run the program:
+
+```
+java MainApp
+```
+
+---
+
+##  Sample Output
+
+```
+================ STUDENT DATA ================
+
+ID    Name       Branch   M1     M2     M3     M4     M5     Percent
+---------------------------------------------------------------
+1     Akash      CS       80     75     70     80     85     78.0
+2     Riya       IT       85     90     88     80     85     85.6
+3     Rahul      CS       70     65     60     80     85     72.0
+...
+```
+
+---
+
+##  Exception Example
+
+```
+Exception occurred: java.io.FileNotFoundException: WrongFile.csv
+```
+
+---
+
+##  Key Highlights
+
+* Clean separation of **logic and main method**
+* Proper use of **CSV file as database**
+* Fully functional **CRUD system**
+* Beginner-friendly and **viva-ready project**
+
+---
+
+##  Author
+PRINCE
+
+---
+
+
+---
+
+#
