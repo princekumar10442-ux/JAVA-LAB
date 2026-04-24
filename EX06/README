@@ -1,1 +1,170 @@
+# 💼 Employee Payroll System (Java)
+
+## 📌 Overview
+
+This project is a **Java-based Employee Payroll System** that demonstrates the concepts of **Object-Oriented Programming (OOP)** such as:
+
+* Abstraction
+* Inheritance (Hierarchical & Multilevel)
+* Method Overriding
+* Encapsulation
+
+The system calculates the **CTC (Cost to Company)** for different types of employees.
+
+---
+
+## 🧠 Concepts Used
+
+* Abstract Classes
+* Inheritance
+* Polymorphism
+* Method Overriding
+* Constructor Chaining
+
+---
+
+## 🏗️ Class Structure
+
+### 🔹 1. Employee (Abstract Class)
+
+* Base class for all employees
+* Contains common attributes:
+
+  * Name
+  * PAN Number
+  * Joining Date
+  * Designation
+  * Employee ID
+* Declares abstract method:
+
+  ```java
+  public abstract double calcCTC();
+  ```
+
+---
+
+### 🔹 2. FullTimeEmployee (Child Class)
+
+* Inherits from `Employee`
+* Attributes:
+
+  * Base Salary
+  * Extra Benefits (Bonus/Commission)
+* CTC Calculation:
+
+  ```java
+  baseSalary + extraBenefit
+  ```
+
+---
+
+### 🔹 3. ContractEmployee (Child Class)
+
+* Inherits from `Employee`
+* Attributes:
+
+  * Number of Hours
+  * Hourly Rate
+* CTC Calculation:
+
+  ```java
+  noOfHours * hourlyRate
+  ```
+
+---
+
+### 🔹 4. Manager (Multilevel Inheritance)
+
+* Inherits from `FullTimeEmployee`
+* Additional attributes:
+
+  * Travel Allowance
+  * Education Allowance
+* CTC Calculation:
+
+  ```java
+  baseSalary + bonus + allowances
+  ```
+
+---
+
+### 🔹 5. Payroll_M (Main Class)
+
+* Entry point of the program
+* Creates objects of all employee types
+* Displays employee details and their CTC
+
+---
+
+## 📂 Project Structure
+
+```
+Employee-Payroll-System/
+│── Employee.java
+│── FullTimeEmployee.java
+│── ContractEmployee.java
+│── Manager.java
+│── Payroll_M.java
+```
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Compile
+
+```bash
+javac *.java
+```
+
+### Step 2: Run
+
+```bash
+java Payroll_M
+```
+
+---
+
+## 🖥️ Sample Output
+
+```
+Employee Payroll Report
+
+ID: 101
+Name: Aman
+Role: SWE
+Total CTC (INR): 85000.0
+
+ID: 201
+Name: Ash
+Role: Consultant
+Total CTC (INR): 8000.0
+
+ID: 301
+Name: Dev
+Role: Tech Lead
+Total CTC (INR): 147000.0
+```
+
+---
+
+## 🎯 Key Features
+
+✔ Handles multiple employee types
+✔ Uses clean OOP design
+✔ Demonstrates real-world payroll calculation
+✔ Easy to extend for more roles
+
+---
+
+## 🚀 Future Enhancements
+
+* Add user input (Scanner)
+* Store employee data in files or database
+* Add GUI (JavaFX/Swing)
+* Generate salary slips
+
+---
+
+
 
