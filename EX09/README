@@ -1,1 +1,172 @@
+# 🍽️ Restaurant Management System (JDBC + MySQL)
 
+## 📌 Project Overview
+
+This project is a **Java-based Restaurant Management System** that demonstrates **JDBC connectivity with MySQL** and performs all basic **CRUD operations** (Create, Read, Update, Delete).
+
+The system manages:
+
+* 🏪 Restaurants
+* 🍔 Menu Items
+
+---
+
+## 🎯 Objectives
+
+* Establish connection between Java and MySQL using JDBC
+* Perform database operations using SQL queries
+* Display results using `ResultSet` in tabular format
+* Understand real-world database handling in Java
+
+---
+
+## 🛠️ Technologies Used
+
+* **Java (JDK 21)**
+* **MySQL**
+* **JDBC (MySQL Connector/J)**
+* **VS Code**
+
+---
+
+## 🗄️ Database Design
+
+### 🔹 Restaurant Table
+
+| Column  | Type     | Description        |
+| ------- | -------- | ------------------ |
+| Id      | INT (PK) | Restaurant ID      |
+| Name    | VARCHAR  | Restaurant Name    |
+| Address | VARCHAR  | Restaurant Address |
+
+### 🔹 MenuItem Table
+
+| Column | Type     | Description             |
+| ------ | -------- | ----------------------- |
+| Id     | INT (PK) | Menu Item ID            |
+| Name   | VARCHAR  | Item Name               |
+| Price  | INT      | Item Price              |
+| ResId  | INT (FK) | Reference to Restaurant |
+
+---
+
+## ⚙️ Features Implemented
+
+### ✅ 1. Insert Operation
+
+* Inserted **10 records** into both tables
+
+### ✅ 2. Select Operation
+
+* Display menu items where **Price ≤ 100**
+* Display menu items from a specific restaurant (**Cafe 1**)
+
+### ✅ 3. Update Operation
+
+* Updated all items where **Price ≤ 100 → Price = 200**
+
+### ✅ 4. Delete Operation
+
+* Deleted items where **Name starts with 'P'**
+
+### ✅ 5. Tabular Output
+
+* Results displayed using `ResultSetMetaData`
+
+---
+
+## 📁 Project Structure
+
+```
+JAVA ASS09/
+ ├── DBConnection.java
+ ├── RestaurantApp.java
+ ├── mysql-connector-j-9.6.0.jar
+```
+
+---
+
+## 🔌 JDBC Connection
+
+```java
+Class.forName("com.mysql.cj.jdbc.Driver");
+Connection con = DriverManager.getConnection(
+    "jdbc:mysql://localhost:3306/RestaurantDB",
+    "root",
+    "your_password"
+);
+```
+
+---
+
+## ▶️ How to Run
+
+### 1️⃣ Compile
+
+```
+javac -cp ".;mysql-connector-j-9.6.0.jar" *.java
+```
+
+### 2️⃣ Run
+
+```
+java -cp ".;mysql-connector-j-9.6.0.jar" RestaurantApp
+```
+
+---
+
+## ⚠️ Important Notes
+
+* Ensure MySQL server is running
+* Database `RestaurantDB` must be created
+* Add MySQL Connector JAR to classpath
+* If duplicate entry error occurs:
+
+```sql
+TRUNCATE TABLE MenuItem;
+TRUNCATE TABLE Restaurant;
+```
+
+---
+
+## 📊 Sample Output
+
+```
+Trying to connect...
+Connected successfully!
+
+Data Inserted Successfully
+
+Items with price <= 100:
+Id   Name      Price   ResId
+1    Pizza     80      1
+...
+
+After Update:
+(All prices updated to 200)
+
+After Delete:
+(Items starting with 'P' removed)
+```
+
+---
+
+## 🚀 Learning Outcomes
+
+* JDBC connectivity
+* SQL query execution in Java
+* ResultSet handling
+* Database design & relationships
+
+---
+
+## 📌 Conclusion
+
+This project successfully demonstrates how Java applications interact with databases using JDBC. It provides a strong foundation for building real-world applications like food ordering systems and inventory management.
+
+---
+
+## 👩‍💻 Author
+
+
+---
