@@ -1,0 +1,3 @@
+interface Product {
+    void displayDetails();
+}
